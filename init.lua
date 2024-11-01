@@ -6,7 +6,7 @@ local indentWidth = 4
 vim.opt.number = true
 
 -- set global clipboard
-vim.opt.clipboard = "unnamed"
+vim.opt.clipboard = "unnamedplus"
 
 -- set syntax highlighting on
 vim.opt.syntax = "enable"

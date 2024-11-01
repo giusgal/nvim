@@ -15,6 +15,7 @@ return {
             vim.cmd('autocmd! TermOpen term://* lua set_terminal_keymaps()') 
             
             -- windows specific options
+            --[[
             local powershell_options = {
                 shell = vim.fn.executable "pwsh" == 1 and "pwsh" or "powershell",
                 shellcmdflag = "-NoLogo -NoProfile -ExecutionPolicy RemoteSigned -Command [Console]::InputEncoding=[Console]::OutputEncoding=[System.Text.Encoding]::UTF8;",
@@ -26,6 +27,7 @@ return {
             for option, value in pairs(powershell_options) do
               vim.opt[option] = value
             end
+            ]]--
 
         end,
 
