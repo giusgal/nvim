@@ -79,6 +79,9 @@ vim.opt.wrap = true
 -- don't show the mode (n,i,v,...), it's already in the status line
 vim.opt.showmode = false
 
+-- show signcolumn (i.e. git symbols, linter warnings at the left of the number bar)
+vim.opt.signcolumn = 'number'
+
 
 
 -- PERFORMANCE
